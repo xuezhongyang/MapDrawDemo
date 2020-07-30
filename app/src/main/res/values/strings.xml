@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MapDrawDemo</string>
+    <string name="rationale_location_storage">应用需要定位权限和存储读写权限</string>
+    <string name="yes">同意</string>
+    <string name="no">取消</string>
+</resources>
