@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo;
+package com.xuezhy.drawmap;
 
 import android.graphics.Color;
 import android.graphics.Point;
@@ -25,18 +25,17 @@ import com.amap.api.maps.model.Polyline;
 import com.amap.api.maps.model.PolylineOptions;
 import com.amap.api.maps.model.TileOverlayOptions;
 import com.orhanobut.hawk.Hawk;
-import com.xuezhy.mapdrawdemo.bean.DrawLatLng;
-import com.xuezhy.mapdrawdemo.bean.LatlngBean;
-import com.xuezhy.mapdrawdemo.bean.LocationEvent;
-import com.xuezhy.mapdrawdemo.utils.CommonUtil;
-import com.xuezhy.mapdrawdemo.utils.DensityUtil;
-import com.xuezhy.mapdrawdemo.utils.DrawMapUtil;
-import com.xuezhy.mapdrawdemo.utils.GoogleMapUtil;
-import com.xuezhy.mapdrawdemo.utils.GpsManager;
-import com.xuezhy.mapdrawdemo.utils.StatusBarUtil;
+import com.xuezhy.drawmap.bean.LocationEvent;
+import com.xuezhy.drawmap.bean.DrawLatLng;
+import com.xuezhy.drawmap.bean.LatlngBean;
+import com.xuezhy.drawmap.utils.CommonUtil;
+import com.xuezhy.drawmap.utils.DensityUtil;
+import com.xuezhy.drawmap.utils.DrawMapUtil;
+import com.xuezhy.drawmap.utils.GoogleMapUtil;
+import com.xuezhy.drawmap.utils.GpsManager;
+import com.xuezhy.drawmap.utils.StatusBarUtil;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -116,7 +115,8 @@ public class MainActivity extends BaseActivity implements AMap.OnMapClickListene
         style.myLocationIcon(bitmapDescriptor);
         style.strokeColor(Color.argb(0, 0, 0, 0));// 设置圆形的边框颜色
         style.radiusFillColor(Color.argb(0, 0, 0, 0));// 设置圆形的填充颜色
-        style.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER);
+//        style.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE_NO_CENTER);
+        style.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATION_ROTATE);
         aMap.setMyLocationStyle(style);
         // 设置为true表示显示定位层并可触发定位，false表示隐藏定位层并不可触发定位，默认是false
         aMap.setMyLocationEnabled(true);
@@ -141,7 +141,11 @@ public class MainActivity extends BaseActivity implements AMap.OnMapClickListene
     public void initData() {
         canClickMap = true;
         CIRCLE_DEFAULT = DensityUtil.dip2px(this, 20.0f);
-        GpsManager.getInstance().init(this);
+        try {
+            GpsManager.getInstance().init(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         //通过 检查定位又没有打开
         if (GpsManager.getInstance().checkGps()) {
             //开始定位

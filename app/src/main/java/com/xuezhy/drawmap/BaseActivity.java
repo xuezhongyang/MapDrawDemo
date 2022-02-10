@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo;
+package com.xuezhy.drawmap;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -9,7 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
-import com.xuezhy.mapdrawdemo.R;
+
+import com.xuezhy.drawmap.R;
 
 
 /**

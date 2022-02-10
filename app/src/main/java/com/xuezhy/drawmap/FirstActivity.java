@@ -1,10 +1,14 @@
-package com.xuezhy.mapdrawdemo;
+package com.xuezhy.drawmap;
 
 import android.Manifest;
 import android.content.Intent;
+import android.location.SettingInjectorService;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.util.Log;
+
+import com.amap.api.services.core.ServiceSettings;
+
 import java.util.List;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.AppSettingsDialog;
@@ -121,6 +125,8 @@ public class FirstActivity extends BaseActivity implements EasyPermissions.Permi
     }
 
     private void goToMainActivity() {
+        ServiceSettings.updatePrivacyShow(this,true,true);
+        ServiceSettings.updatePrivacyAgree(this,true);
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }

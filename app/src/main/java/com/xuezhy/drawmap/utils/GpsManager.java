@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,9 +8,10 @@ import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.xuezhy.mapdrawdemo.EventCode;
-import com.xuezhy.mapdrawdemo.bean.LatlngBean;
-import com.xuezhy.mapdrawdemo.bean.LocationEvent;
+import com.xuezhy.drawmap.bean.LocationEvent;
+import com.xuezhy.drawmap.EventCode;
+import com.xuezhy.drawmap.bean.LatlngBean;
+
 import org.greenrobot.eventbus.EventBus;
 
 import static android.content.Context.LOCATION_SERVICE;
@@ -35,7 +36,7 @@ public class GpsManager {
         return checkGpsManager;
     }
 
-    public void init(Activity context) {
+    public void init(Activity context) throws Exception {
         if (mLocationManager == null) {
             mLocationManager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
         }

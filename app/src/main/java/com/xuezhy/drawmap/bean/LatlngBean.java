@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.bean;
+package com.xuezhy.drawmap.bean;
 
 import java.io.Serializable;
 

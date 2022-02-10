@@ -1,7 +1,7 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import com.amap.api.maps.model.LatLng;
-import com.xuezhy.mapdrawdemo.bean.DrawLatLng;
+import com.xuezhy.drawmap.bean.DrawLatLng;
 
 import java.util.ArrayList;
 import java.util.Collections;

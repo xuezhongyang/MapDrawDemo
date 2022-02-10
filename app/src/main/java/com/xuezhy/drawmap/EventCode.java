@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo;
+package com.xuezhy.drawmap;
 
 /**
  * 类功能描述:

@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import android.content.Context;
 import android.content.res.Configuration;

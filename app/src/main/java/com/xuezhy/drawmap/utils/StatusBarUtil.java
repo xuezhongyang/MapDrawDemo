@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -17,7 +17,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import com.xuezhy.mapdrawdemo.R;
+import com.xuezhy.drawmap.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

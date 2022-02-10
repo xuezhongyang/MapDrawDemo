@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo.utils;
+package com.xuezhy.drawmap.utils;
 
 import com.amap.api.maps.model.TileOverlayOptions;
 import com.amap.api.maps.model.TileProvider;

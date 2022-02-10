@@ -1,4 +1,4 @@
-package com.xuezhy.mapdrawdemo;
+package com.xuezhy.drawmap;
 
 import android.app.Application;
 import com.orhanobut.hawk.Hawk;
