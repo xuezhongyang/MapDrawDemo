@@ -6,8 +6,5 @@
 
 ![img](https://upload-images.jianshu.io/upload_images/15072242-656e8c187ff98812.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-你可以下载demoapk体验：http://d.7short.com/wp9j
+你可以下载demoapk体验：https://d.3appstore.com/dw56
 
-扫码下载apk：
-
-![img](https://upload-images.jianshu.io/upload_images/15072242-806315ed2291e400.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
